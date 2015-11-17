@@ -35,7 +35,7 @@
   },
   "license": "WTFPL",
   "dependencies": {
-    "isparta": "^3.0.3",
+    "isparta": "^4.0.0",
     "loader-utils": "^0.2.6",
     "lodash": "^3.5.0"
   }
