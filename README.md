@@ -55,5 +55,23 @@ config.set({
 
 [Documentation: Using loaders](https://webpack.github.io/docs/using-loaders.html).
 
+#### Passing options to isparta
+
+You can pass config variables to *isparta* using *webpack* loader params.
+
+Example (*webpack* loader config):
+```js
+{
+  test: /(.jsx)|(.js)$/,
+  exclude: /(node_modules|bower_components|Spec)/,
+  loader: 'isparta-instrumenter',
+  query: {
+    babel: {
+      presets: ['es2015', 'react', 'stage-0']
+    }
+}
+```
+This will specify which presets *babel* should use at instrumenting stage.
+
 ### License
 [WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-strip.jpg)
