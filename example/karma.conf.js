@@ -77,11 +77,11 @@ module.exports = function(config) {
         },
         module: {
             preLoaders: [
-                {test: /(\.jsx)|(\.js)$/, exclude: /(node_modules|bower_components|Spec)/, loader: 'isparta-instrumenter'},
+                {test: /(\.jsx)|(\.js)$/, exclude: /(node_modules|bower_components|Spec)/, loader: 'isparta-instrumenter', query: { babel: {presets: ['es2015', 'react', 'stage-0']} } },
             ],
             loaders: [
                 {test: /(react)|(react\/addons)$/, loader: 'expose?React!imports?shim=es5-shim/es5-shim&sham=es5-shim/es5-sham'},
-                {test: /(\.jsx)|(\.js)$/, exclude: /node_modules/, loader: '6to5-loader'},
+                {test: /(\.jsx)|(\.js)$/, exclude: /node_modules/, loader: 'babel-loader', query: { presets: ['es2015', 'react', 'stage-0'] } },
             ],
             // postLoaders: [
             //     {test: /\.js$/, exclude: /(node_modules|bower_components)/, loader: 'isparta-instrumenter'}

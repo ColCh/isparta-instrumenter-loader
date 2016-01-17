@@ -1,4 +1,4 @@
-var simple = require('js/simple.js');
+import simple from 'js/simple.js';
 
 describe('simple', function () {
     it('should compute x*x from 2', function () {
