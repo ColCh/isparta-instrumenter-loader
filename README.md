@@ -1,3 +1,7 @@
+# :warning: :warning: :exclamation: DEPRECATED :exclamation: :warning: :warning:
+
+> This module is unmaintained. Please use [deepsweet/isparta-loader](https://github.com/deepsweet/isparta-loader)
+
 ## Isparta instrumenter loader for [webpack](https://webpack.github.io/)
 
 Instrument JS files with [Isparta](https://github.com/douglasduteil/isparta) for subsequent code coverage reporting. Forked from [deepsweet/istanbul-instrumenter-loader](https://github.com/deepsweet/istanbul-instrumenter-loader). Thank you for your work :thumbsup:

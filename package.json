@@ -1,7 +1,7 @@
 {
   "name": "isparta-instrumenter-loader",
   "version": "1.0.0",
-  "description": "isparta instrumenter loader for webpack",
+  "description": "isparta-instrumenter-loader is deprecated. Please use isparta-loader instead",
   "keywords": [
     "webpack",
     "loader",
